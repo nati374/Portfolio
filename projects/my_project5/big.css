@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, blue, red); /* Gradient background from blue to red */
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 200px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #45a049;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.featured {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.album-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.album-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.album-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 150px; /* Set max width */
+    max-height: 150px; /* Set max height */
+}
+
+.gospel-albums[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/diegoperezm/from-text-to-html-emmet/tree/5413baca824c7a21078e0986682449ace80d9cf5/README.md?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/epic-kaso/media-store/tree/554da292bfefa1be5dec9525e02bea708177f32a/app%2Fviews%2Fpages%2Fpartials%2Fpage-header.blade.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "2")

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="converter">
+            <div class="input-group">
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Enter amount" min="0">
+            </div>
+            <div class="input-group">
+                <label for="from">From</label>
+                <div class="select-wrapper">
+                    <select id="from">
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                    <span class="flag-icon" id="from-flag"></span>
+                </div>
+            </div>
+            <button id="swap-btn">↔ Swap</button>
+            <div class="input-group">
+                <label for="to">To</label>
+                <div class="select-wrapper">
+                    <select id="to">
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                    <span class="flag-icon" id="to-flag"></span>
+                </div>
+            </div>
+            <button id="convert-btn">Convert</button>
+            <div class="result">
+                <p id="result-text">Result will appear here</p>
+                <p id="last-updated">Last updated: <span id="update-time">-</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Projectile Motion Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Projectile Motion Simulator</h1>
+        <canvas id="simulationCanvas"></canvas>
+        <div class="controls">
+            <label>Initial Velocity (m/s): <input type="number" id="velocity" value="20"></label>
+            <label>Angle (°): <input type="number" id="angle" value="45"></label>
+            <label>Gravity (m/s²): <input type="number" id="gravity" value="9.8"></label>
+            <label>Air Resistance (Drag): <input type="number" id="airResistance" value="0.02"></label>
+            <button id="start">Start Simulation</button>
+            <button id="clear">Clear All Projectiles</button>
+            <div id="message"></div>
+        </div>
+        <div id="graph-container">
+            <canvas id="graphCanvas"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

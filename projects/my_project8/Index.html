@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced TTS App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text-to-Speech Converter</h1>
+
+        <button id="theme-toggle">🌙 Dark Mode</button>
+
+        <textarea id="text-input" placeholder="Type or paste text here..."></textarea>
+        <p id="char-count">Characters: 0</p>
+
+        <div class="controls">
+            <label>Voice:</label>
+            <select id="voice-select"></select>
+
+            <label>Speed:</label>
+            <input type="range" id="speed" min="0.5" max="2" step="0.1" value="1">
+            <span id="speed-value">1x</span>
+
+            <label>Pitch:</label>
+            <input type="range" id="pitch" min="0.5" max="2" step="0.1" value="1">
+            <span id="pitch-value">1x</span>
+        </div>
+
+        <button id="speak-btn">▶ Speak</button>
+        <button id="pause-btn">⏸ Pause</button>
+        <button id="resume-btn">⏯ Resume</button>
+        <button id="stop-btn">⏹ Stop</button>
+        <button id="download-btn">💾 Download</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

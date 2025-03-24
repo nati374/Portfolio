@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <title>Voice Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+            transition: background 0.5s ease-in-out;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background: blue;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Voice Assistant</h1>
+    <p id="status">Click the button and speak a command.</p>
+    <button onclick="startListening()">Start Listening</button>
+    
+    <script src="script.js"></script>
+    <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js").then(() => {
+      console.log("Service Worker Registered");
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: #222;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+canvas {
+    border: 2px solid white;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.controls {
+    margin-top: 20px;
+}
+input, button {
+    width: 100px;
+    margin-left: 10px;
+    padding: 5px;
+    background-color: #444;
+    border: 1px solid #888;
+    color: white;
+}
+button {
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background-color: #555;
+}
+#graph-container {
+    margin-top: 30px;
+    width: 80%;
+    margin: auto;
+}
+#message {
+    font-size: 16px;
+    margin-top: 10px;
+    color: yellow;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <h1>Welcome to Our Website</h1>
+    <!-- Search Bar -->
+    <form id="searchForm" class="search-bar">
+        <input type="text" id="searchQuery" placeholder="Search formulas..." required>
+        <button type="submit">Search</button>
+    </form>
+</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Formulas</title>
+    <style>
+        body {
+            background: linear-gradient(to right, blue, red);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .formula-section {
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .formula {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .toggle-button {
+            background-color: #fff;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 10px auto;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .toggle-button:hover {
+            transform: scale(1.1);
+            background-color: #ddd;
+        }
+        .formula-details {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleFormulas(grade) {
+            const formulas = document.querySelectorAll(`.grade-${grade}`);
+            formulas.forEach(formula => {
+                formula.style.display = formula.style.display === 'none' ? 'block' : 'none';
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>High School Physics Formulas</h1>
+
+    <div class="formula-section">
+        <h2>Grade 9</h2>
+        <button class="toggle-button" onclick="toggleFormulas(9)">Toggle Grade 9 Formulas</button>
+        <div class="formula grade-9" style="display:none;">F = ma</div>
+        <div class="formula grade-9" style="display:none;">F = G (m1 m2) / r^2</div>
+        <div class="formula grade-9" style="display:none;">v = u + at</div>
+        <div class="formula grade-9" style="display:none;">s = ut + 1/2 at^2</div>
+        <div class="formula grade-9" style="display:none;">v^2 = u^2 + 2as</div>
+        <div class="formula grade-9" style="display:none;">W = Fd cos θ</div>
+        <div class="formula grade-9" style="display:none;">P = W / t</div>
+        <div class="formula grade-9" style="display:none;">KE = 1/2 mv^2</div>
+        <div class="formula grade-9" style="display:none;">PE = mgh</div>
+        <div class="formula grade-9" style="display:none;">p = mv</div>
+        <div class="formula grade-9" style="display:none;">J = Ft</div>
+        <div class="formula grade-9" style="display:none;">F = -kx</div>
+        <div class="formula grade-9" style="display:none;">Fc = mv^2 / r</div>
+    </div>
+
+    <div class="formula-section">
+        <h2>Grade 10</h2>
+        <button class="toggle-button" onclick="toggleFormulas(10)">Toggle Grade 10 Formulas</button>
+        <div class="formula grade-10" style="display:none;">MA = Fout / Fin</div>
+        <div class="formula grade-10" style="display:none;">v = f λ</div>
+        <div class="formula grade-10" style="display:none;">f = 1 / T</div>
+        <div class="formula grade-10" style="display:none;">T = 1 / f</div>
+        <div class="formula grade-10" style="display:none;">F = -kx</div>
+    </div>
+
+    <div class="formula-section">
+        <h2>Grade 11</h2>
+        <button class="toggle-button" onclick="toggleFormulas(11)">Toggle Grade 11 Formulas</button>
+        <div class="formula grade-11" style="display:none;">V = IR</div>
+        <div class="formula grade-11" style="display:none;">E = F / q</div>
+        <div class="formula grade-11" style="display:none;">U = qV</div>
+        <div class="formula grade-11" style="display:none;">C = Q / V</div>
+        <div class="formula grade-11" style="display:none;">F = qvB sin θ</div>
+        <div class="formula grade-11" style="display:none;">ℰ = - dΦB / dt</div>
+    </div>
+
+    <div class="formula-section">
+        <h2>Grade 12</h2>
+        <button class="toggle-button" onclick="toggleFormulas(12)">Toggle Grade 12 Formulas</button>
+        <div class="formula grade-12" style="display:none;">v = f λ</div>
+        <div class="formula grade-12" style="display:none;">E = mc^2</div>
+        <div class="formula grade-12" style="display:none;">n1 sin θ1 = n2 sin θ2</div>
+        <div class="formula grade-12" style="display:none;">1 / f = 1 / do + 1 / di</div>
+        <div class="formula grade-12" style="display:none;">M = hi / ho = - di / do</div>
+        <div class="formula grade-12" style="display:none;">E = hf - φ</div>
+        <div class="formula grade-12" style="display:none;">λ = h / p</div>
+        <div class="formula grade-12" style="display:none;">E = mc^2</div>
+        <div class="formula grade-12" style="display:none;">Δx Δp ≥ ħ / 2</div>
+        <div class="formula grade-12" style="display:none;">P + 1/2 ρ v^2 + ρ gh = constant</div>
+        <div class="formula grade-12" style="display:none;">A1 v1 = A2 v2</div>
+        <div class="formula grade-12" style="display:none;">Fb = ρ V g</div>
+        <div class="formula grade-12" style="display:none;">ω = θ / t</div>
+        <div class="formula grade-12" style="display:none;">ac = v^2 / r</div>
+        <div class="formula grade-12" style="display:none;">L = I ω</div>
+        <div class="formula grade-12" style="display:none;">E = hf</div>
+        <div class="formula grade-12" style="display:none;">i ħ ( ∂ψ / ∂t ) = Ĥ ψ</div>
+        <div class="formula grade-12" style="display:none;">μ = Ff / FN</div>
+        <div class="formula grade-12" style="display:none;">P = F / A</div>
+        <div class="formula grade-12" style="display:none;">ρ = m / V</div>
+        <div class="formula grade-12" style="display:none;">c = Q / m ΔT</div>
+    </div>
+    <script>
+    document.getElementById('searchForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const query = document.getElementById('searchQuery').value.toLowerCase();
+        const formulas = [
+            { name: 'Einstein’s Relativity', formula: 'E = mc^2' },
+            { name: 'Newton’s Second Law', formula: 'F = ma' },
+            { name: 'Ideal Gas Law', formula: 'PV = nRT' },
+            // Add more formulas here
+        ];
+
+        const results = formulas.filter(formula =>
+            formula.name.toLowerCase().includes(query) || formula.formula.toLowerCase().includes(query)
+        );
+
+        if (results.length > 0) {
+            alert(`Found the following formulas:\n${results.map(result => `${result.name}: ${result.formula}`).join('\n')}`);
+        } else {
+            alert('No formulas found.');
+        }
+    });
+</script>
+</body>
+</html>
+<footer>
+    <p>&copy; 2025 Your Website. All rights reserved.</p>
+    <div class="links">
+        <a href="https://www.phys.org" target="_blank">Phys.org</a>
+        <a href="https://www.physicsworld.com" target="_blank">Physics World</a>
+        <a href="https://phet.colorado.edu/" target="_blank">PhET Interactive Simulations</a>
+        <a href="https://www.khanacademy.org/science/physics" target="_blank">Khan Academy Physics</a>
+        <a href="https://www.physicsforums.com" target="_blank">Physics Forums</a>
+    </div>
+</footer>
