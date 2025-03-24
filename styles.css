@@ -163,7 +163,7 @@ h2 {
 
 .skill-level {
   height: 100%;
-  background: linear-gradient(90deg, #1e3c72, #dc2430);
+  background: linear-gradient(90deg, #000000, #222222); /* Strong dark gradient */
   border-radius: 5px;
   width: 0;
   transition: width 1s ease;
