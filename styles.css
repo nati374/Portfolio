@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, blue, black, purple); /* Gradient background from blue to red */
+     background: linear-gradient(to right, blue, red); /* Gradient background from blue to red */
     margin: 0;
     padding: 0;
     color: white;
